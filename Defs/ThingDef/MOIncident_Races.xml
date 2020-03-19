@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ====== Abomination ===== -->
+	<ThingDef ParentName="BasePawn">
+		<defName>AbominationRace</defName>
+		<thingClass>MoreIncidents.Pawn_theThing</thingClass>
+		<label>Abomination</label>
+		<description>Abominations are slow, hulking, relentless manifestations of flesh. Their bodies twist and contort to heal even major wounds quickly. Their mangled maw seeps with toxic bile. They will consume and assimilate, corpse by corpse.</description>
+		    <statBases>
+			  <Mass>80</Mass>
+			  <MoveSpeed>2.1</MoveSpeed>
+			  <Flammability>1</Flammability>
+			  <ArmorRating_Blunt>0</ArmorRating_Blunt>
+			  <ArmorRating_Sharp>0</ArmorRating_Sharp>
+			  <ArmorRating_Heat>0</ArmorRating_Heat>
+			  <MeatAmount>400</MeatAmount>
+			  <LeatherAmount>300</LeatherAmount>
+			  <ComfyTemperatureMin>-198</ComfyTemperatureMin>
+			  <ComfyTemperatureMax>98</ComfyTemperatureMax>
+			  <ImmunityGainSpeed>5</ImmunityGainSpeed>
+			</statBases>
+		<verbs>
+      <li>
+        <verbClass>Verb_MeleeAttackDamage</verbClass>
+        <defaultCooldownTime>1.6</defaultCooldownTime>
+        <meleeDamageBaseAmount>15</meleeDamageBaseAmount>
+        <meleeDamageDef>ToxicBite</meleeDamageDef>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<thinkTreeMain>theThing</thinkTreeMain>
+			<body>QuadrupedAnimalWithHooves</body>
+			<needsRest>false</needsRest>
+			<makesFootprints>true</makesFootprints>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+			<hasGenders>true</hasGenders>
+			<foodType>None</foodType>
+			<lifeExpectancy>10</lifeExpectancy>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>7</baseHealthScale>
+			<meatLabel>Human Flesh</meatLabel>
+			<leatherDef>Leather_Human</leatherDef>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+		  <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+		  <soundDeath>Pawn_Muffalo_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+</Defs>

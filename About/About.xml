@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Mo'Events</name>
+  <author>Laurens Silljé</author>
+  <url></url>
+	<supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>Laurens.Events</packageId>
+  <description>More incidents to spice up the game with. Version 1.2 7/1/17. Please report bugs </description>
+</ModMetaData>
