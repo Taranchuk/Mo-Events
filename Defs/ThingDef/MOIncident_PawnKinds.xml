@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<PawnKindDef>
-		<defName>AbominationPawnKind</defName>
+		<defName>MO_AbominationPawnKind</defName>
 		<label>abomination</label>
-		<race>AbominationRace</race>
+		<race>MO_AbominationRace</race>
 		<combatPower>230</combatPower>
-		<defaultFactionType>AbominationFaction</defaultFactionType>
+		<defaultFactionType>MO_AbominationFaction</defaultFactionType>
 		<aiAvoidCover>true</aiAvoidCover>
 		<lifeStages>
 		  <li>

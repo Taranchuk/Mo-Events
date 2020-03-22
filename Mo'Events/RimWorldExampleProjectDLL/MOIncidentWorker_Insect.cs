@@ -76,7 +76,7 @@ namespace MoreIncidents
 						GenSpawn.Spawn(pawn2, intVec2, map);
 						num2 = j;
 					}
-					Find.LetterStack.ReceiveLetter("Insects".Translate(), "InsectsDesc".Translate(), LetterDefOf.ThreatBig, new TargetInfo(intVec, map, false), null); //"A group of hungry insects have entered your area. They'll do anything to get your food!"
+					Find.LetterStack.ReceiveLetter("MO_Insects".Translate(), "MO_InsectsDesc".Translate(), LetterDefOf.ThreatBig, new TargetInfo(intVec, map, false), null); //"A group of hungry insects have entered your area. They'll do anything to get your food!"
 					pawn.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(90000, 130000);
 					pawn2.mindState.exitMapAfterTick = Find.TickManager.TicksGame + Rand.Range(90000, 130000);
 					Find.TickManager.slower.SignalForceNormalSpeedShort();

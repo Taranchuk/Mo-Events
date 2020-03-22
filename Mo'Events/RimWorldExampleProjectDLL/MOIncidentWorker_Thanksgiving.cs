@@ -54,7 +54,7 @@ namespace MoreIncidents
 				list.Add(thing4);
 				IntVec3 intVec = DropCellFinder.RandomDropSpot(map);
 				DropPodUtility.DropThingsNear(intVec, map, list, 110, false, false, true);
-				Find.LetterStack.ReceiveLetter("Thanksgiving".Translate(), "ThanksgivingDesc".Translate() , LetterDefOf.PositiveEvent, new TargetInfo(intVec, map, false), null); //"One of the tribes has noticed your food stores are low. They have provided you with some food, no strings attached.\n\nThey thank you for being such good friends and they hope your friendship will be further cemented by this act."
+				Find.LetterStack.ReceiveLetter("MO_Thanksgiving".Translate(), "MO_ThanksgivingDesc".Translate() , LetterDefOf.PositiveEvent, new TargetInfo(intVec, map, false), null); //"One of the tribes has noticed your food stores are low. They have provided you with some food, no strings attached.\n\nThey thank you for being such good friends and they hope your friendship will be further cemented by this act."
 				result = true;
 			}
 			else

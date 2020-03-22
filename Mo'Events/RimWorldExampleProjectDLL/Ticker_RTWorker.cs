@@ -20,7 +20,7 @@ namespace MoreIncidents
             Scribe_Values.Look<bool>(ref this.mutjustspawned, "mutjustspawned", false, false);
             Scribe_Values.Look<int>(ref this.intervalcut, "intervalcut", 0, false);
             Scribe_Values.Look<int>(ref this.timemut, "timemut", 0, false);
-            Scribe_References.Look<Pawn>(ref this.theThing, "theThing", false);
+            Scribe_References.Look<Pawn>(ref this.theThing, "MO_theThing", false);
             Scribe_References.Look<Pawn>(ref this.Face, "Face", false);
         }
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
@@ -110,12 +110,12 @@ namespace MoreIncidents
                             {
                                 Ticker_RTWorker.rt.isPawn = new Func<Faction, bool>(Ticker_RTWorker.rt.IncidentRT.whichFac);
                             }
-                            PawnGenerationRequest request = new PawnGenerationRequest(MODefOf.AbominationPawnKind, null, PawnGenerationContext.NonPlayer, -1, true, false, false, false, true, false, 1f, true, true, true, false, false, false, false, false, 0f,
+                            PawnGenerationRequest request = new PawnGenerationRequest(MODefOf.MO_AbominationPawnKind, null, PawnGenerationContext.NonPlayer, -1, true, false, false, false, true, false, 1f, true, true, true, false, false, false, false, false, 0f,
     null, 1f, null, null, null, null, null, null);
                             this.theThing = PawnGenerator.GeneratePawn(request);
                             this.theThing.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null);
                             GenSpawn.Spawn(this.theThing, this.mutplace, base.Map);
-                            Find.LetterStack.ReceiveLetter("Trojan".Translate(), "TrojanDesc".Translate(this.Face.LabelShort, this.Face.Named("PAWN")), LetterDefOf.ThreatBig, this.theThing, null); //this.Face.LabelShort + "has turned into an Abomination!"
+                            Find.LetterStack.ReceiveLetter("MO_Trojan".Translate(), "MO_TrojanDesc".Translate(this.Face.LabelShort, this.Face.Named("PAWN")), LetterDefOf.ThreatBig, this.theThing, null); //this.Face.LabelShort + "has turned into an Abomination!"
                             bool flag22 = !this.Face.Destroyed;
                             bool flag23 = flag22;
                             if (flag23)
@@ -211,7 +211,7 @@ namespace MoreIncidents
         {
             internal bool whichFac(Faction fac)
             {
-                return fac.def.defName == "AbominationFaction";
+                return fac.def.defName == "MO_AbominationFaction";
             }
 
             public static readonly Ticker_RTWorker.rt IncidentRT = new Ticker_RTWorker.rt();

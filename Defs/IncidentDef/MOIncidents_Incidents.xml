@@ -3,7 +3,7 @@
 
 
   <IncidentDef>
-    <defName>Stroke</defName>
+    <defName>MO_Stroke</defName>
     <label>stroke</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -16,7 +16,7 @@
   </IncidentDef>
   
   <IncidentDef>
-    <defName>SurvivalPod</defName>
+    <defName>MO_SurvivalPod</defName>
     <label>survival pod</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -29,7 +29,7 @@
   </IncidentDef>
 	
   <IncidentDef>
-    <defName>Nausea</defName>
+    <defName>MO_Nausea</defName>
     <label>nausea</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -41,7 +41,7 @@
   </IncidentDef>
   
   <IncidentDef>
-    <defName>Insects</defName>
+    <defName>MO_Insects</defName>
     <label>insect</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -55,7 +55,7 @@
   
 <!-- Not working correctly right now
   <IncidentDef>
-    <defName>Recovery</defName>
+    <defName>MO_Recovery</defName>
     <label>recover</label>
     <targetType>BaseMap</targetType>
     <WorkerClass>MoreIncidents.MOIncidentWorker_Recovery</WorkerClass>
@@ -66,7 +66,7 @@
   
 
   <IncidentDef>
-    <defName>PodCrash</defName>
+    <defName>MO_PodCrash</defName>
     <label>pod crash</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -79,7 +79,7 @@
   </IncidentDef>
   
   <IncidentDef>
-    <defName>Thanksgiving</defName>
+    <defName>MO_Thanksgiving</defName>
     <label>thanksgiving</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -93,7 +93,7 @@
 
 <!-- Bugged
   <IncidentDef>
-    <defName>Calm</defName>
+    <defName>MO_Calm</defName>
     <label>calm weather</label>
     <targetType>BaseMap</targetType>
     <WorkerClass>MoreIncidents.MOIncidentWorker_CalmWeather</WorkerClass>
@@ -104,7 +104,7 @@
   
 
   <IncidentDef>
-    <defName>ShipBreak</defName>
+    <defName>MO_ShipBreak</defName>
     <label>ship break</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -119,7 +119,7 @@
   
 <!-- Not working like I want to right now
   <IncidentDef>
-    <defName>GoodRest</defName>
+    <defName>MO_GoodRest</defName>
     <label>good rest</label>
     <targetType>BaseMap</targetType>
     <WorkerClass>MoreIncidents.MOIncidentWorker_GoodRest</WorkerClass>
@@ -129,7 +129,7 @@
 --> 
   
   <IncidentDef> 
-    <defName>Amnesia</defName>
+    <defName>MO_Amnesia</defName>
     <label>amnesia</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -143,7 +143,7 @@
   
 <!-- What's this? --> 
   <IncidentDef>
-	<defName>RescueTraitor</defName>
+	<defName>MO_RescueTraitor</defName>
 	<label>rescue traitor</label>
 	<targetTags>
     <li>Map_PlayerHome</li>
@@ -156,7 +156,7 @@
   </IncidentDef>
   
   <IncidentDef>
-	<defName>Migration</defName>
+	<defName>MO_Migration</defName>
 	<label>migration</label>
 	<targetTags>
     <li>Map_PlayerHome</li>

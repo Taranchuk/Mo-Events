@@ -10,7 +10,7 @@ namespace MoreIncidents
         {
             Map map = (Map)parms.target;
 			IntVec3 intVec = CellFinderLoose.RandomCellWith((IntVec3 sq) => GenGrid.Standable(sq, map) && !map.fogGrid.IsFogged(sq), map, 1000);
-			Thing thing = ThingMaker.MakeThing(ThingDef.Named("RTWorker"), null);
+			Thing thing = ThingMaker.MakeThing(ThingDef.Named("MO_RTWorker"), null);
 			GenSpawn.Spawn(thing, intVec, map);
 			return true;
 		}

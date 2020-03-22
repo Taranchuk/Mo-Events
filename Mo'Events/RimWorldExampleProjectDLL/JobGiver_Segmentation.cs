@@ -15,7 +15,7 @@ namespace MoreIncidents
 			if (flag2)
 			{
 				TraverseParms traverseParams = TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, true);
-				JobDef named = DefDatabase<JobDef>.GetNamed("Segmentation", true);
+				JobDef named = DefDatabase<JobDef>.GetNamed("MO_Segmentation", true);
 				bool flag3 = pawn.jobs.curJob == null || (pawn.jobs.curJob.def != named && pawn.jobs.curJob.checkOverrideOnExpire);
 				bool flag4 = flag3;
 				if (flag4)

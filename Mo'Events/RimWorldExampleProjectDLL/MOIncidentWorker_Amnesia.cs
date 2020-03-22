@@ -27,8 +27,8 @@ namespace MoreIncidents
 			{
                 pawn.jobs.EndCurrentJob(JobCondition.Succeeded, false);
                 pawn.jobs.ClearQueuedJobs(true);
-                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("Amnesia"), null);
-                Find.LetterStack.ReceiveLetter("Amnesia".Translate(), "AmnesiaDesc".Translate(pawn.Label, pawn.Named("PAWN")), LetterDefOf.NegativeEvent, pawn, null);
+                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("MO_Amnesia"), null);
+                Find.LetterStack.ReceiveLetter("MO_Amnesia".Translate(), "MO_AmnesiaDesc".Translate(pawn.Label, pawn.Named("PAWN")), LetterDefOf.NegativeEvent, pawn, null);
                 //pawn.Name + " suddenly forgot what he was doing. He can't remember what to do."
                 //pawn.Name + " suddenly forgot what she was doing. She can't remember what to do.", LetterDefOf.NegativeEvent, pawn, null);
 				result = true;

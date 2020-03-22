@@ -16,7 +16,7 @@ namespace MoreIncidents
             if (flag2)
             {
                 TraverseParms traverseParams = TraverseParms.For(pawn, Danger.Deadly, TraverseMode.ByPawn, true);
-                JobDef named = DefDatabase<JobDef>.GetNamed("Kill", true);
+                JobDef named = DefDatabase<JobDef>.GetNamed("MO_Kill", true);
                 bool flag3 = pawn.jobs.curJob == null || (pawn.jobs.curJob.def != named && pawn.jobs.curJob.checkOverrideOnExpire);
                 bool flag4 = flag3;
                 if (flag4) 
@@ -38,7 +38,7 @@ namespace MoreIncidents
                             bool flag10 = flag9;
                             if (flag10)
                             {
-                                return new Job(DefDatabase<JobDef>.GetNamed("CrushDoor", true), intVec, building_Door)
+                                return new Job(DefDatabase<JobDef>.GetNamed("MO_CrushDoor", true), intVec, building_Door)
                                 {
                                     maxNumMeleeAttacks = 4,
                                     expiryInterval = 500

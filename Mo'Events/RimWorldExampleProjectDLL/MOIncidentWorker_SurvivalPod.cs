@@ -31,7 +31,7 @@ namespace MoreIncidents
 			list.Add(item9);
 			IntVec3 intVec = DropCellFinder.RandomDropSpot(map);
 			DropPodUtility.DropThingsNear(intVec, map, list, 110, false, false, true);
-			Find.LetterStack.ReceiveLetter("SurvivalPods".Translate(), "SurvivalPodsDesc".Translate(), LetterDefOf.PositiveEvent, new TargetInfo(intVec, map, false), null); //"A cluster of survival pods landed nearby, you will find some essential surviving items in there."
+			Find.LetterStack.ReceiveLetter("MO_SurvivalPods".Translate(), "MO_SurvivalPodsDesc".Translate(), LetterDefOf.PositiveEvent, new TargetInfo(intVec, map, false), null); //"A cluster of survival pods landed nearby, you will find some essential surviving items in there."
 			return true;
 		}
 	}

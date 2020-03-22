@@ -100,7 +100,7 @@ null, 1f, null, null, null, null, null, null);
 				leaveSlag = true
 			});
 			DropPodUtility.DropThingsNear(intVec, map, list, 110, false, true, true);
-			Find.LetterStack.ReceiveLetter("CargoRain".Translate(), "CargoRainDesc".Translate(), LetterDefOf.PositiveEvent, new TargetInfo(intVec, map, false), null); //"A chunk of your crashed ship fell into the atmosphere, watch out for falling cargo and rescue pods.\n\nIt looks like this chunk came from one of the richer parts of the ship."
+			Find.LetterStack.ReceiveLetter("MO_CargoRain".Translate(), "MO_CargoRainDesc".Translate(), LetterDefOf.PositiveEvent, new TargetInfo(intVec, map, false), null); //"A chunk of your crashed ship fell into the atmosphere, watch out for falling cargo and rescue pods.\n\nIt looks like this chunk came from one of the richer parts of the ship."
 			return true;
 		}
 

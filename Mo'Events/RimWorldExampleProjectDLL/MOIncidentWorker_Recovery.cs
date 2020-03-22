@@ -48,8 +48,8 @@ namespace MoreIncidents
 			bool result;
 			if (flag3)
 			{
-                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("Healed"), null);
-                Find.LetterStack.ReceiveLetter("Recovery".Translate(), "RecoveryDesc".Translate(pawn.Label, pawn.Named("PAWN")), LetterDefOf.PositiveEvent, pawn, null);
+                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("MO_Healed"), null);
+                Find.LetterStack.ReceiveLetter("MO_Recovery".Translate(), "MO_RecoveryDesc".Translate(pawn.Label, pawn.Named("PAWN")), LetterDefOf.PositiveEvent, pawn, null);
                 //pawn.Name + " felt a surge of power. One of his injuries got healed and he is feeling exceptionally well.", LetterDefOf.PositiveEvent, pawn, null);
                 //pawn.Name + " felt a surge of power. One of her injuries got healed and she is feeling exceptionally well.", LetterDefOf.PositiveEvent, pawn, null);
                 this.HealInjuryRandom(pawn, 30f);

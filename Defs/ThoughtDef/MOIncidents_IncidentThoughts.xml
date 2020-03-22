@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
 	<ThoughtDef>
-		<defName>Nauseated</defName>
+		<defName>MO_Nauseated</defName>
 		<durationDays>1.5</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -16,7 +16,7 @@
 	
 	
 	<ThoughtDef>
-		<defName>HadStroke</defName>
+		<defName>MO_HadStroke</defName>
 		<durationDays>2</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -30,7 +30,7 @@
 	
 <!--
 	<ThoughtDef>
-		<defName>Healed</defName>
+		<defName>MO_Healed</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -44,7 +44,7 @@
 -->
 <!--
 	<ThoughtDef>
-		<defName>GoodRest</defName>
+		<defName>MO_GoodRest</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>
@@ -58,7 +58,7 @@
 -->
 
 	<ThoughtDef>
-		<defName>Amnesia</defName>
+		<defName>MO_Amnesia</defName>
 		<durationDays>0.3</durationDays>
 		<stackLimit>1</stackLimit>
 		<stages>

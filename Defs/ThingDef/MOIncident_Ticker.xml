@@ -30,7 +30,7 @@
   </ThingDef>
   
   <ThingDef ParentName="EventBase">
-		<defName>RTWorker</defName>
+		<defName>MO_RTWorker</defName>
 		<thingClass>MoreIncidents.Ticker_RTWorker</thingClass>
   </ThingDef>
 </Defs>

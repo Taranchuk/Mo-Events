@@ -24,8 +24,8 @@ namespace MoreIncidents
 			bool result;
 			if (flag3)
 			{
-                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("GoodRest"), null);
-                Find.LetterStack.ReceiveLetter("WellRested".Translate(), "WellRestedDesc".Translate(pawn.Label, pawn.Named("PAWN")), LetterDefOf.PositiveEvent, pawn, null);
+                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("MO_GoodRest"), null);
+                Find.LetterStack.ReceiveLetter("MO_WellRested".Translate(), "MO_WellRestedDesc".Translate(pawn.Label, pawn.Named("PAWN")), LetterDefOf.PositiveEvent, pawn, null);
                 //pawn.Name + " is feeling well rested and fit.", LetterDefOf.PositiveEvent, pawn, null);
                 //pawn.Name + " is feeling well rested and fit.", LetterDefOf.PositiveEvent, pawn, null);
 				result = true;

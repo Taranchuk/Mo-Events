@@ -23,14 +23,15 @@ namespace MoreIncidents
             bool flag2 = GenCollection.TryRandomElement<Pawn>(freeColonists.Where(predicate), out pawn);
 			bool flag3 = flag2;
 			bool result;
-			if (flag3)
+			if (flag3) 
 			{
                 pawn.needs.rest.CurLevel = 0.1f;
                 pawn.jobs.EndCurrentJob(JobCondition.Succeeded, true);
-                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("Nauseated"), null);
-                Find.LetterStack.ReceiveLetter("Nausea".Translate(),
+                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("MO_Nauseated"), null);
+
+                Find.LetterStack.ReceiveLetter("MO_Nausea".Translate(),
                     GrammarResolverSimpleStringExtensions.Formatted(Translator
-                    .Translate("NauseaDesc"), NamedArgumentUtility.Named(pawn, "PAWN"))
+                    .Translate("MO_NauseaDesc"), NamedArgumentUtility.Named(pawn, "PAWN"))
                     .AdjustedFor(pawn, "PAWN", true), LetterDefOf.NegativeEvent, pawn, null);
 
                 //pawn.Name + " is feeling nauseous. He vomited all over and needs rest.", LetterDefOf.NegativeEvent, pawn, null);

@@ -115,7 +115,7 @@ namespace MoreIncidents
 					predicate = (JobDriver_Segmentation.segment.letSegment = new Func<Faction, bool>(JobDriver_Segmentation.segment.JobSegment.doChewCorpse));
 				}
 				Faction faction = GenCollection.RandomElement<Faction>(allFactions.Where(predicate));
-				this.abom = PawnGenerator.GeneratePawn(MODefOf.AbominationPawnKind, faction);
+				this.abom = PawnGenerator.GeneratePawn(MODefOf.MO_AbominationPawnKind, faction);
 				GenSpawn.Spawn(this.abom, position, base.Map);
 			}
 			this.pawn.jobs.EndCurrentJob(JobCondition.Succeeded, true);
@@ -127,7 +127,7 @@ namespace MoreIncidents
 		{
 			public bool doChewCorpse(Faction fac)
 			{
-				return fac.def.defName == "AbominationFaction";
+				return fac.def.defName == "MO_AbominationFaction";
 			}
 
 			public static readonly JobDriver_Segmentation.segment JobSegment = new JobDriver_Segmentation.segment();

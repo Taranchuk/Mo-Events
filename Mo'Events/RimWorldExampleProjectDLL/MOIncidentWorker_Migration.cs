@@ -26,7 +26,7 @@ namespace MoreIncidents
 				bool flag4 = flag3;
 				if (flag4)
 				{
-					Find.LetterStack.ReceiveLetter("Migration".Translate(), "MigrationDesc".Translate(), LetterDefOf.NeutralEvent, new TargetInfo(intVec, map, false), null); //A large group of animals are migrating through your area. You can hunt, tame or leave them.
+					Find.LetterStack.ReceiveLetter("MO_Migration".Translate(), "MO_MigrationDesc".Translate(), LetterDefOf.NeutralEvent, new TargetInfo(intVec, map, false), null); //A large group of animals are migrating through your area. You can hunt, tame or leave them.
 					result = true;
 				}
 				else

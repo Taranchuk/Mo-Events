@@ -27,8 +27,8 @@ namespace MoreIncidents
                 HealthUtility.DamageUntilDowned(pawn);
                 pawn.needs.rest.CurLevel = 10f;
                 pawn.jobs.EndCurrentJob(0, true);
-                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("HadStroke"), null);
-                Find.LetterStack.ReceiveLetter("Stroke".Translate(), "StrokeDesc".Translate(pawn.Label, pawn.Named("PAWN")), LetterDefOf.NegativeEvent, pawn, null);
+                pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDef.Named("MO_HadStroke"), null);
+                Find.LetterStack.ReceiveLetter("MO_Stroke".Translate(), "MO_StrokeDesc".Translate(pawn.Label, pawn.Named("PAWN")), LetterDefOf.NegativeEvent, pawn, null);
                 //pawn.Name + " had a stroke. He needs medical care and rest.", LetterDefOf.NegativeEvent, pawn, null);
                 //pawn.Name + " had a stroke. She needs medical care and rest.", LetterDefOf.NegativeEvent, pawn, null);
                 int num;

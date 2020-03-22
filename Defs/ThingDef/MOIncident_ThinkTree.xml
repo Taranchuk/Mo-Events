@@ -4,7 +4,7 @@
 
 
 	<ThinkTreeDef>
-		<defName>theThing</defName>
+		<defName>MO_theThing</defName>
 		<thinkRoot Class="ThinkNode_Priority">
       <subNodes>
         <!-- Keep lying down if we have to -->

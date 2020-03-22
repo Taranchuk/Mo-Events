@@ -8,7 +8,7 @@ namespace MoreIncidents
     public static class MODefOf
     { 
 
-        public static PawnKindDef AbominationPawnKind;
+        public static PawnKindDef MO_AbominationPawnKind;
     }
 }
 

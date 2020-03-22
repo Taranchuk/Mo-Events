@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<JobDef>
-		<defName>Kill</defName>
+		<defName>MO_Kill</defName>
 		<driverClass>MoreIncidents.JobDriver_Kill</driverClass>
 		<reportString>Kill TargetA.</reportString>
 	</JobDef>
 	<JobDef>
-		<defName>Segmentation</defName>
+		<defName>MO_Segmentation</defName>
 		<driverClass>MoreIncidents.JobDriver_Segmentation</driverClass>
 		<reportString>Segmentation through TargetA.</reportString>
 	</JobDef>
 	<JobDef>
-		<defName>CrushDoor</defName>
+		<defName>MO_CrushDoor</defName>
 		<driverClass>MoreIncidents.JobDriver_CrushDoor</driverClass>
 		<reportString>Crush TargetB.</reportString>
 	</JobDef>
