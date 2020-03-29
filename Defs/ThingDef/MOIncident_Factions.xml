@@ -15,6 +15,7 @@
 			<li>(0, 0)</li>
 		</points>
 	</raidCommonalityFromPointsCurve>
+	<permanentEnemy>true</permanentEnemy>
     <humanlikeFaction>false</humanlikeFaction>
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>

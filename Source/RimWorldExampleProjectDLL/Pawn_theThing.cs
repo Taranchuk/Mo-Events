@@ -21,61 +21,46 @@ namespace MoreIncidents
 
 		public override void Tick()
 		{
-			bool flag = Find.TickManager.TicksGame % 250 == 0;
-			bool flag2 = flag;
-			if (flag2)
+            base.Tick();
+			if (Find.TickManager.TicksGame % 250 == 0)
 			{
 				this.TickRare();
 			}
 			this.mindState.mentalStateHandler.neverFleeIndividual = true;
-			bool flag3 = !this.stances.FullBodyBusy;
-			bool flag4 = flag3;
-			if (flag4)
-			{
-				try
-				{
-					this.pather.PatherTick();
-				}
-				catch (Exception)
-				{
-				}
-			}
-			base.Drawer.DrawTrackerTick();
-			this.health.HealthTick();
-			this.stances.StanceTrackerTick();
-			bool flag5 = this.equipment != null;
-			bool flag6 = flag5;
-			if (flag6)
-			{
-				this.equipment.EquipmentTrackerTick();
-			}
-			bool flag7 = this.apparel != null;
-			bool flag8 = flag7;
-			if (flag8)
-			{
-				this.apparel.ApparelTrackerTick();
-			}
-			bool flag9 = this.jobs != null;
-			bool flag10 = flag9;
-			if (flag10)
-			{
-				this.jobs.JobTrackerTick();
-			}
-			bool flag11 = this.health.hediffSet.HasTendableInjury();
-			bool flag12 = flag11;
-			if (flag12)
+			//if (!this.stances.FullBodyBusy)
+			//{
+			//	try
+			//	{
+			//		this.pather.PatherTick();
+			//	}
+			//	catch (Exception)
+			//	{
+			//	}
+			//}
+			//base.Drawer.DrawTrackerTick();
+			//this.health.HealthTick();
+			//this.stances.StanceTrackerTick();
+			//if (this.equipment != null)
+			//{
+			//	this.equipment.EquipmentTrackerTick();
+			//}
+			//if (this.apparel != null)
+			//{
+			//	this.apparel.ApparelTrackerTick();
+			//}
+			//if (this.jobs != null)
+			//{
+			//	this.jobs.JobTrackerTick();
+			//}
+			if (this.health.hediffSet.HasTendableInjury())
 			{
 				this.TickHeal(true);
 			}
-			bool flag13 = !base.Dead || !base.Downed;
-			bool flag14 = flag13;
-			if (flag14)
+			if (!base.Dead || !base.Downed)
 			{
 				int num = this.ticksSinceStatusUpdate;
 				this.ticksSinceStatusUpdate = num + 1;
-				bool flag15 = this.ticksSinceStatusUpdate >= this.updateStatusEveryXTicks;
-				bool flag16 = flag15;
-				if (flag16)
+				if (this.ticksSinceStatusUpdate >= this.updateStatusEveryXTicks)
 				{
 					IntVec3 intVec = CellFinder.RandomClosewalkCellNear(base.Position, base.Map, 1);
 					ThingDef named = DefDatabase<ThingDef>.GetNamed("Filth_Blood", true);
@@ -83,9 +68,7 @@ namespace MoreIncidents
 					this.ticksSinceStatusUpdate = 0;
 				}
 			}
-			bool downed = base.Downed;
-			bool flag17 = downed;
-			if (flag17)
+			if (base.Downed)
 			{
 				IntVec3 intVec2 = CellFinder.RandomClosewalkCellNear(base.Position, base.Map, 2);
 				ThingDef named2 = DefDatabase<ThingDef>.GetNamed("Filth_Blood", true);
