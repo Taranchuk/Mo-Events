@@ -20,16 +20,7 @@
     <hidden>true</hidden>
     <autoFlee>false</autoFlee>
     <techLevel>Neolithic</techLevel>
-    <startingGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </startingGoodwill>
-    <mustStartOneEnemy>true</mustStartOneEnemy>
     <canUseAvoidGrid>false</canUseAvoidGrid>
-    <naturalColonyGoodwill>
-      <min>-100</min>
-      <max>-100</max>
-    </naturalColonyGoodwill>
 	<factionIconPath>World/WorldObjects/Expanding/VillageSavage</factionIconPath>
   </FactionDef>
 </Defs>
