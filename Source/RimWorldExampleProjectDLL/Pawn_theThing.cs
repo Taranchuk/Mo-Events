@@ -27,31 +27,7 @@ namespace MoreIncidents
 				this.TickRare();
 			}
 			this.mindState.mentalStateHandler.neverFleeIndividual = true;
-			//if (!this.stances.FullBodyBusy)
-			//{
-			//	try
-			//	{
-			//		this.pather.PatherTick();
-			//	}
-			//	catch (Exception)
-			//	{
-			//	}
-			//}
-			//base.Drawer.DrawTrackerTick();
-			//this.health.HealthTick();
-			//this.stances.StanceTrackerTick();
-			//if (this.equipment != null)
-			//{
-			//	this.equipment.EquipmentTrackerTick();
-			//}
-			//if (this.apparel != null)
-			//{
-			//	this.apparel.ApparelTrackerTick();
-			//}
-			//if (this.jobs != null)
-			//{
-			//	this.jobs.JobTrackerTick();
-			//}
+
 			if (this.health.hediffSet.HasTendableInjury())
 			{
 				this.TickHeal(true);

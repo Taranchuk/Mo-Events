@@ -10,6 +10,8 @@ namespace MoreIncidents
 	{
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
+            //Log.Message("this " + this.pawn.Label + " try to reserve " + this.job.targetA.Label);
+            return true;
             return this.pawn.Reserve(this.job.targetA, this.job, 1, -1, null, errorOnFailed);
         }
         protected override IEnumerable<Toil> MakeNewToils()
