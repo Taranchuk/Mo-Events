@@ -50,7 +50,7 @@ namespace MoreIncidents
                     Faction faction = Find.FactionManager.RandomNonHostileFaction(false, false, true, TechLevel.Spacer);
                     this.Face = (this.newThing = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDefOf.SpaceRefugee, faction, PawnGenerationContext.NonPlayer, -1, true, false, false, false, true, false, 1f, true, true, true, false, false, false, false, false, 0f,
         null, 1f, null, null, null, null, null, null)));
-
+                    this.Face.RaceProps.thinkTreeMain = DefDatabase<ThinkTreeDef>.GetNamed("HumanlikeTheThing");
                 }
                 bool flag7 = this.timer == 0f;
                 bool flag8 = flag7;
